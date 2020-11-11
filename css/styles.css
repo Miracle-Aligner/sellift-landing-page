@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-BlackItalic.eot');
+    src: local('Formular Black Italic'), local('Formular-BlackItalic'),
+        url('../fonts/Formular-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Formular-BlackItalic.woff') format('woff'),
+        url('../fonts/Formular-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-MediumItalic.eot');
+    src: local('Formular Medium Italic'), local('Formular-MediumItalic'),
+        url('../fonts/Formular-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Formular-MediumItalic.woff') format('woff'),
+        url('../fonts/Formular-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Italic.eot');
+    src: local('Formular Italic'), local('Formular-Italic'),
+        url('../fonts/Formular-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Italic.woff2') format('woff2'),
+        url('../fonts/Formular-Italic.woff') format('woff'),
+        url('../fonts/Formular-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-LightItalic.eot');
+    src: local('Formular Light Italic'), local('Formular-LightItalic'),
+        url('../fonts/Formular-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-LightItalic.woff2') format('woff2'),
+        url('../fonts/Formular-LightItalic.woff') format('woff'),
+        url('../fonts/Formular-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Black.eot');
+    src: local('Formular Black'), local('Formular-Black'),
+        url('../fonts/Formular-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Black.woff2') format('woff2'),
+        url('../fonts/Formular-Black.woff') format('woff'),
+        url('../fonts/Formular-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Light.eot');
+    src: local('Formular Light'), local('Formular-Light'),
+        url('../fonts/Formular-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Light.woff2') format('woff2'),
+        url('../fonts/Formular-Light.woff') format('woff'),
+        url('../fonts/Formular-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular.eot');
+    src: local('Formular'),
+        url('../fonts/Formular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular.woff2') format('woff2'),
+        url('../fonts/Formular.woff') format('woff'),
+        url('../fonts/Formular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Medium.eot');
+    src: local('Formular Medium'), local('Formular-Medium'),
+        url('../fonts/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Medium.woff2') format('woff2'),
+        url('../fonts/Formular-Medium.woff') format('woff'),
+        url('../fonts/Formular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-BoldItalic.eot');
+    src: local('Formular Bold Italic'), local('Formular-BoldItalic'),
+        url('../fonts/Formular-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Formular-BoldItalic.woff') format('woff'),
+        url('../fonts/Formular-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Bold.eot');
+    src: local('Formular Bold'), local('Formular-Bold'),
+        url('../fonts/Formular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Bold.woff2') format('woff2'),
+        url('../fonts/Formular-Bold.woff') format('woff'),
+        url('../fonts/Formular-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DsDigital';
+    src: url('../fonts/DS-DIGI.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+body {
+	font-family: 'Formular';
+	font-size: 30px;
+	background-color: #061320;
+	color: white;
+}
+
+.floor-screen {
+	top: 32px;
+	font-family: 'DsDigital'!important;
+	font-size: 64px; 
+	line-height: 74px;
+	color: #2D2D2D;
+	position: absolute;
+}
+
+.current-floor {
+	font-family: 'DsDigital'!important;
+	font-size: 64px; 
+	line-height: 74px;
+	color: #42DC63;
+    position: relative;
+	z-index: 2;
+}
+
+#floor-screen-container {
+	position: relative;
+}
+
+#floor-screen-background {
+	position: absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: 1;
+}
+
+#floor-rectangle {
+	position: absolute;
+	left:15%;
+	right:15%;
+	margin-left:auto;
+	margin-right:auto;
+	top: 3.91%;
+
+	background: #000000;
+	box-shadow: -4px -3px 11px #1A1F24;
+	border-radius: 5px;
+}
+
+.lift-scene-up {
+	background: #172737;
+    height: 160px;
+    border-bottom: 24px solid #1A1F24;
+}
+
+.lamps-block {
+	background-color: #102132;
+    height: 110px;
+    width: 88.3%;
+    margin: 0 auto;
+    /* border: 1px solid #B5B5B5; */
+    -webkit-transform: perspective(150px) rotateX(-40deg);
+    transform: perspective(300px) rotateX(-40deg);
+    margin-top: -7px;
+}
+
+.img-100 {
+	width: 100%;
+}
+
+.main-block {
+	/* change for tablet and mobile */
+	margin-top: -18px;
+    margin-left: 10.5vw;;
+    margin-right: 10.5vw;;
+	background-color: #1D2935;
+	height: 70vh;
+}
+
+.door {
+	width: 50vw;
+	/*Change for phone and tablet!*/
+	height: calc(100vh - 160px);
+	background: #26384A;
+}
+
+#left-door {
+	z-index: 5;
+	position: absolute;
+	/*transition: width 2s;*/
+	transition:all 300ms linear;
+    left: -50vw;
+}
+
+.left-door-moved {
+    left:0vw!important;
+}
+
+
+#right-door {
+	z-index: 5;
+	position: absolute;
+	box-shadow: inset 4px 0px 26px #172737;
+	transition:all 300ms linear;
+	left:100vw;
+}
+
+.right-door-moved {
+    left:50vw!important;
+}
