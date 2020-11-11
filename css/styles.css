@@ -145,6 +145,7 @@ body {
 	font-size: 30px;
 	background-color: #061320;
 	color: white;
+    overflow-x: hidden;
 }
 
 .floor-screen {
@@ -237,9 +238,12 @@ body {
     display: none;  
 }
 
+.display-block {
+    display: block!important;
+}
+
 .left-door-moved {
     left:0vw!important;
-    display: block;
 }
 
 
@@ -254,5 +258,4 @@ body {
 
 .right-door-moved {
     left:50vw!important;
-    display: block;
 }
