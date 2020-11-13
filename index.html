@@ -17,7 +17,7 @@
 						    <div id="floor-screen-background">
 								88
 							</div>
-							<span class="current-floor">
+							<span class="current-floor" id="floor-counter">
 								00
 							</span>
 						</center>
@@ -45,8 +45,33 @@
 			</div>
 		</div>
 
+		<div class="row hidden" id = "floor-7">
+			<div class="container">
+				<div class="row pc h-100">
+					<!--<img  class = "img-100" src="./img/roof_1.png">-->
+
+					<div class="col-10 f7-slogan">*Слоган sellift*</div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+						
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		
+
 		<!-- Lamps Block -->
-		<div class="lamps-block align-middle">
+		<div class="lamps-block align-middle" id="lamps-block">
 			<div class="container">
 				<div class="row">
 					<div class="col-1"></div>
@@ -62,10 +87,152 @@
 			
 		</div>
 		
-		<div class="row main-block">
-			<div class="col-12">
-				<button onclick="move();">Move</button>
+
+		
+
+
+		<div class="row main-block" id = "main-block">
+			<div class="container">
+
+				<div class = "row h-100 pc" id="floor-0">
+					<div class="col-10"></div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
+
+				<div class = "row h-100 pc hidden" id="floor-1">
+					<div class="col-10"></div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
+
+				<div class = "row h-100 pc hidden" id="floor-2">
+					<div class="col-10"></div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
+
+				<div class = "row h-100 pc hidden" id="floor-3">
+					<div class="col-10"></div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
+
+				<div class = "row h-100 pc hidden" id="floor-4">
+					<div class="col-10"></div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
+				
+
+				<div class = "row h-100 pc hidden" id="floor-5">
+					<div class="col-1"></div>
+					<div class="col-11 header mt-6 mb-4"> Наша команда</div>
+					<div class="col-1"></div>
+					<div class="col-3">
+						<img class="f5-photo" src="./img/p3.png" alt="Сергей Полян">
+						<div class="f5-rect mx-auto my-4 mb-6"> Сергей Полян </div>
+					</div>
+					<div class="col-3">
+						<img class="f5-photo" src="./img/p2.png" alt="Игорь Коротеев">
+						<div class="f5-rect mx-auto my-4 mb-6"> Игорь Коротеев </div>
+					</div>
+					<div class="col-3">
+						<img class="f5-photo" src="./img/p3.png" alt="Геннадий Быков">
+						<div class="f5-rect mx-auto my-4 mb-6"> Геннадий Быков </div>
+					</div>
+
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
+
+				<div class = "row h-100 pc hidden" id="floor-6">
+					<div class="col-10"></div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
 			</div>
+			
+		</div>
+
+		<div class="row main-block hidden" id = "floor-5">
+			<div class="container">
+				<div class="row pc h-100">
+					<div class="col-1"></div>
+
+					
+
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+						
+
+					</div>
+				</div>
+			</div>
+			
 		</div>
 
 		
