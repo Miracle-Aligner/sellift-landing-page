@@ -213,6 +213,14 @@ body {
 	width: 100%;
 }
 
+.img-90 {
+    width: 90%;
+}
+
+.img-80 {
+    width: 80%;
+}
+
 .main-block {
 	/* change for tablet and mobile */
 	margin-top: -18px;
@@ -367,4 +375,93 @@ body {
 
 .mb-6 {
   margin-bottom: 5rem!important;
+}
+
+.f1-header {
+    line-height: 74px;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.f1-header-img {
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+.f1-regular-text {
+    margin-bottom: 25%;
+}
+
+.f2-img {
+    
+
+    -webkit-filter: drop-shadow(5px 5px 15px #1A1F24), drop-shadow(-5px -5px 15px rgba(255, 255, 255, 0.06));
+    filter: url(#drop-shadow);
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#1A1F24')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#1A1F24')";
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=-5, OffY=-5, Color='rgba(255, 255, 255, 0.06)')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=-5, OffY=-5, Color='#1A1F24')";
+
+
+    filter: drop-shadow(5px 5px 15px #1A1F24), drop-shadow(-5px -5px 15px rgba(255, 255, 255, 0.06))!important;
+}
+
+.f2-img-div {
+    margin-top: 130px;
+
+    -webkit-box-shadow: 5px 5px 15px #1A1F24, -5px -5px 15px rgba(255, 255, 255, 0.06); 
+    -moz-box-shadow:    5px 5px 15px #1A1F24, -5px -5px 15px rgba(255, 255, 255, 0.06);  
+    box-shadow:         5px 5px 15px #1A1F24, -5px -5px 15px rgba(255, 255, 255, 0.06); 
+    border-radius: 14px;
+}
+
+.f3-img {
+    margin-top: 130px;
+}
+
+.f2-cta{
+    margin-bottom: 130px;
+
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.f2-text {
+    margin-top: 130px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#f4-rectangle {
+    width: 45vw;
+    position: absolute; 
+    left: -5.5vw;
+    margin-top: -300px;
+
+    background: #E2ECF4;
+    box-shadow: 6px 6px 8px #061320, -4px -3px 9px rgba(255, 255, 255, 0.32);
+    border-radius: 14px;
+}
+
+.f4-text {
+    color: black;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 50px;
+}
+
+.f3-img {
+    margin-bottom: 130px;
 }

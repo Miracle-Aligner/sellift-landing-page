@@ -6,6 +6,9 @@ let floorCountArr = [ "00", "0 1", "02", "03", "04", "05", "06", "RT"]
 window.move_up = function() {
 	console.log(currentFloor);
 
+	
+	$("html, body").animate({ scrollTop: 0 }, "fast");
+
 	closeDoors();
 
 	prevFloor = currentFloor;
@@ -56,12 +59,35 @@ window.move_up = function() {
 		openDoors();
 	}, 400);
 
-	
+	if (currentFloor == 4){
+		setTimeout(function() {
+			var hide = document.getElementsByClassName("f4-hide");
+			var show = document.getElementsByClassName("f4-show");
+			var i;
+			for (i = 0; i < hide.length; i++) {
+				hide[i].classList.add("hidden");
+				show[i].classList.remove("hidden");
+			}
+			document.getElementById("exhibitionist").src="./img/f4-man-open.png";
+		}, 1000);
+	}
+
+	if (currentFloor == 5){
+		var hide = document.getElementsByClassName("f4-hide");
+		var show = document.getElementsByClassName("f4-show");
+		var i;
+		for (i = 0; i < hide.length; i++) {
+			hide[i].classList.remove("hidden");
+			show[i].classList.add("hidden");
+		}
+	}
 	
 }
 
 window.move_down = function() {
 	console.log(currentFloor);
+
+	$("html, body").animate({ scrollTop: 0 }, "fast");
 
 	prevFloor = currentFloor;
 	currentFloor--;
@@ -101,6 +127,29 @@ window.move_down = function() {
 		changeFloorCounter();
 		openDoors();
 	}, 400);
+
+	if (currentFloor == 4){
+		setTimeout(function() {
+			var hide = document.getElementsByClassName("f4-hide");
+			var show = document.getElementsByClassName("f4-show");
+			var i;
+			for (i = 0; i < hide.length; i++) {
+				hide[i].classList.add("hidden");
+				show[i].classList.remove("hidden");
+			}
+			document.getElementById("exhibitionist").src="./img/f4-man-open.png";
+		}, 1000);
+	}
+
+	if (currentFloor == 5){
+		var hide = document.getElementsByClassName("f4-hide");
+		var show = document.getElementsByClassName("f4-show");
+		var i;
+		for (i = 0; i < hide.length; i++) {
+			hide[i].classList.remove("hidden");
+			show[i].classList.add("hidden");
+		}
+	}
 }
 
 function changeFloorCounter(){
