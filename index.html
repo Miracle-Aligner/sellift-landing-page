@@ -26,6 +26,26 @@
 			</div>
 		</div>
 
+		
+		<div class="row start-button-div" id = "start-button-div">
+			<div class="start-button" id = "start-button" onclick="init_lift();">
+				<img src="./img/logo_full.png" alt="Sellift Logo" class="f0-logo-img" >
+			</div>	
+		</div>
+		
+		<div class="door" id="start-left-door">
+			<div class="row h-100">
+			</div>
+		</div>
+
+		<div class="door" id="start-right-door">
+			<div class="row h-100">
+			</div>
+		</div>
+
+
+
+
 		<div class="door" id="left-door">
 			<div class="row h-100">
 				<div class="col-7 my-auto"></div>
@@ -50,7 +70,7 @@
 				<div class="row pc h-100">
 					<!--<img  class = "img-100" src="./img/roof_1.png">-->
 
-					<div class="col-10 f7-slogan">*Слоган sellift*</div>
+					<div class="col-10 f7-slogan">Sellift. Lifting up your business</div>
 					<div class="col-1 my-auto">
 
 						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
@@ -72,7 +92,7 @@
 
 		<!-- Lamps Block -->
 		<div class="lamps-block align-middle" id="lamps-block">
-			<div class="container">
+			<div class="container pc-row  d-none d-sm-none d-md-none d-lg-block d-xl-block">
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-4 my-auto">
@@ -82,6 +102,17 @@
 					<div class="col-4 my-auto">
 						<img class = "img-100" src="./img/lamp.png">
 					</div>
+					
+				</div>
+			</div>
+
+			<div class="container mobile-row d-none d-sm-block d-md-block d-lg-none">
+				<div class="row ">
+					<div class="col-3"></div>
+					<div class="col-6 my-auto">
+						<img class = "img-100 align-middle" src="./img/lamp_mobile.png">
+					</div>
+					<div class="col-3"></div>
 				</div>
 			</div>
 			
@@ -94,28 +125,14 @@
 		<div class="row main-block" id = "main-block">
 			<div class="container">
 
-				<div class = "row h-100 pc" id="floor-0">
-					<div class="col-10"></div>
-					<div class="col-1 my-auto">
-
-						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
-							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
-						</div>
-
-						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
-							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
-						</div>
-					</div>
-				</div>
-
-				<div class = "row h-100 pc hidden" id="floor-1">
+				<div class = "row h-100 pc hidden" id="floor-0">
 					<div class="col-1"></div>
 					<div class="col-6">
-						<img class = "f1-header-img img-100" src="./img/logo_full.png" alt="Sellift Logo">
-						<div class="f1-header">
+						<img class = "f0-header-img img-100" src="./img/logo_full.png" alt="Sellift Logo">
+						<div class="f0-header">
 							We sell the result
 						</div>
-						<div class="f1-regular-text">
+						<div class="f0-regular-text">
 							Продавай товары от официальных американских и европейских брендов прямо на Amazon. 
 
 						</div>
@@ -133,21 +150,21 @@
 					</div>
 				</div>
 
-				<div class = "row h-100 pc hidden" id="floor-2">
+				<div class = "row h-100 pc hidden" id="floor-1">
 					<div class="col-1"></div>
 					<div class="col-4"> 
-						<div class="f2-img-div">
-							<img class = "f2-img img-100" src="./img/team.png" alt="Sellift Team">
+						<div class="f1-img-div">
+							<img class = "f1-img img-100" src="./img/team.png" alt="Sellift Team">
 						</div>
 						
 					</div>
 					<div class="col-5"> 
-						<div class="f2-text">
-							<p>Мы практики, которые учат тому, что проверили на себе - оптимальной стратегии торговли на Амазон. </p>
+						<div class="f1-text">
+							<p>Мы - практики, которые учат тому, что проверили на себе - оптимальной стратегии торговли на Амазон.</p>
 							<p>Опт - стратегия продаж без типичных проблем на Амазон.</p>
 							
 						</div>
-						<div class="f2-cta">
+						<div class="f1-cta">
 							<p>
 								<u> Присоединяйся сейчас!</u> ⟶
 							</p>
@@ -166,8 +183,503 @@
 					</div>
 				</div>
 
+				<div class = "row h-100 pc hidden" id="floor-2">
+					<div class="col-sm-1 col-md-2 col-lg-1"></div>
+					<div class="col-sm-11 col-md-9 col-lg-11 header mt-6 mb-4"> Программа курса</div>
+					<div class="col-sm-1 col-md-2 col-lg-1"></div>
+					<div class="col-sm-10 col-md-8 col-lg-3">
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 1</div>
+									<div class="f2-module-header">Вводная информация</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-1" onclick="open_description(1);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m1">
+										<hr/>
+										<p>
+											Must have - что необходимо для начала работы.
+										</p>
+										 
+										<p>
+											Что такое wholesale. Варианты моделей.
+										</p>
+										 
+										<p>
+											Как должен выглядеть сайт визитка.
+										</p>
+										 
+										<p>
+											Добавление reseller certificate в аккаунт продавца и базовый обзор кабинета продавца.
+										</p>
+										
+										<p>
+											Основные термины в работе с Амазон.
+										</p>
+										
+										<p>
+											Обзор основных программ необходимых для работы.
+										</p>
+										 
+										<p>
+											Пошаговый план перевода вашего аккаунта с физлица на компанию.									
+										</p>
+										<p>
+											<a href="https://drive.google.com/file/d/1wQCIqwBzyff1qjW_8ElLUUbGbOPv8lhZ/view?usp=sharing">
+												С чего начать, если нет никакого опыта в опте. 
+											</a>											
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 2</div>
+									<div class="f2-module-header">Работа с поставщиками</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-2" onclick="open_description(2);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m2">
+										<hr/>
+										<p>
+											Виды поставщиков. Разница. Плюсы и минусы в работе с ними.
+										</p>
+										 
+										<p>
+											Первый контакт с брендом/дистрибьютором. Обзор письма. Вопросы, которые необходимо уточнить перед размещением заказа.
+										</p>
+										 
+										<p>
+											Что такое Trade References и как это поможет в общении с брендами.
+										</p>
+										 
+										<p>
+											Формы для одобрения оптового аккаунта, какие методы оплаты существуют.
+										</p>
+
+										<p>
+											<b>Методы поиска:</b>
+										</p>
+										<p>
+											Метод поиска дистрибьюторов.
+										</p>
+										<p>
+											Поиск брендов методом анализа конкурентов. Маркеры, на которые обращаем внимание при анализе товара. Пример таблицы для ведения учета “контактов брендов” и для внесения данных об их товарах.
+										</p>
+										<p>
+											Метод обратного поиска брендов. От Амазона к бренду. 
+										</p>
+										<p>
+											Способ обратного поиска товаров и оптовиков с помощью Jungle Scout and AMZ Analyzer.
+										</p>
+										<p>
+											POWER QUESTIONS - какие вопросы нужно задавать в общение с поставщиков, чтобы добиться результата 
+										</p>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 3</div>
+									<div class="f2-module-header">Анализ продукта</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-3" onclick="open_description(3);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m3">
+										<hr/>
+										<p>
+											Обзор основных программ продавца для работы. 
+										</p>
+										 
+										<p>
+											Программа Hazmat - что это такое, как получить одобрение, какие нужны документы.
+										</p>
+										<p>
+											Программа Small and Light - что это такое, какие преимущества, какие критерии должны быть у продукта чтобы попасть в эту программу, как добавить продукт в эту программу.
+										</p>
+										<p>
+											Программа Remote Fulfillment by FBA - что это такое, какие плюсы, как добавить продукты в эту программу.
+
+										</p>
+										<p>
+											Программа Amazon Business - что это такое, какие плюсы, как зарегистрироваться.
+										</p>
+										<p>
+											Работа с Кипа. Критерии выбора продукта.
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 4</div>
+									<div class="f2-module-header">Открытие категорий</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-4" onclick="open_description(4);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m4">
+										<hr/>
+										<p>
+											Automotive
+										</p>
+										 
+										<p>
+											Toys (даже Дисней) 
+										</p>
+										 
+										<p>
+											Health & Personal Care
+										</p>
+										 
+										<p>
+											Pet care/pet food
+										</p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-sm-1 col-md-2 d-lg-none"></div>
+					<div class="col-sm-1 col-md-2 d-lg-none"></div>
+					<div class="col-sm-10 col-md-8 col-lg-3">
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 5</div>
+									<div class="f2-module-header">CRM система</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-5" onclick="open_description(5);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m5">
+										<hr/>
+										<p>
+											Обзор системы.
+										</p>
+										 
+										<p>
+											Постановка задач сотрудникам.
+										</p>
+										 
+										<p>
+											Работа с сервисом Задарма. Как установить и записывать разговоры наемного сотрудника для прозвонов.
+										</p>
+										 
+										<p>
+											Как установить и настроить корпоративную почту. Как дать доступ, если нанимаешь кого-то для ресерча.
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 6</div>
+									<div class="f2-module-header">Работа с бандлами</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-6" onclick="open_description(6);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m6">
+										<hr/>
+										<p>
+											Что такое бандлы, чем они отличаются от сетов и для чего они нужны.
+										</p>
+										 
+										<p>
+											Как правильно составлять бандлы.
+										</p>
+										 
+										<p>
+											Как получить GTIN exemption.
+										</p>
+										 
+										<p>
+											Торговая марка и ее использование при продаже бандлов.
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 7</div>
+									<div class="f2-module-header">Работа с командой </div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-7" onclick="open_description(7);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m7">
+										<hr/>
+										<p>
+											Рекомендации реального продавца на Амазон по подбору персонала и, в частности, поиску англоговорящего переговорщика. 
+											<br>
+											Спикер - Екатерина Мельникова
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-1 col-md-2 d-lg-none"></div>
+					<div class="col-sm-1 col-md-2 d-lg-none"></div>
+					<div class="col-sm-10 col-md-8 col-lg-3">
+						
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 8</div>
+									<div class="f2-module-header">Переговоры с поставщиком</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-8" onclick="open_description(8);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m8">
+										<hr/>
+										<p>
+											<b>Все что нужно знать после телефонного гудка:</b>
+										</p>
+										 
+										<p>
+											Что обычно просят отправить бренды, дистрибьюторы в письме
+										</p>
+										 
+										<p>
+											Что делать, если бренд не отвечает по почте - звонок, не та почта для связи на сайте, связь в соц. сетях
+										</p>
+										<p>
+											Удобный email для произношения на английском 
+										</p>
+										<p>
+											Контакт по телефону
+										</p>
+										<p>
+											Что спрашиваем при первом контакте
+										</p>
+										<p>
+											Просим скидку, уточняем, как получить дешевле
+										</p>
+										<p>
+											Что спрашивают поставщики
+										</p>
+										<p>
+											Что нужно спросить, если Вам отказали
+										</p>
+										<p>
+											Общение с поставщиками из Европы у которых дистрибьюторы в Америке
+										</p>
+										<p>
+											Почему звонки эффективнее email
+										</p>
+										<p>
+											Время ожидания ответа бренда
+										</p>
+										<p>
+											Страхи при звонках поставщикам и как их преодолеть
+										</p>
+										<p>
+											Общий итог, какие американцы при общении с покупателями
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 9</div>
+									<div class="f2-module-header">Опт на британском Амазон</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-9" onclick="open_description(9);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m9">
+										<hr/>
+										<p>
+											Как находить "золотые листинги"
+										</p>
+										 
+										<p>
+											Как читать Кипу
+										</p>
+										 
+										<p>
+											Как оптимизировать листинг для роста продаж
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="f2-module-card container  f2-module-container">
+							<div class="row align-items-end">
+								<div class="col-1"></div>
+								<div class="col-sm-8 col-md-8 col-lg-7">
+									<div class="f2-module-number">Модуль 10</div>
+									<div class="f2-module-header">Нулевой отчет</div>
+
+								</div>
+								<div class="col-sm-2 col-md-2 col-lg-3">
+									<div class="f2-open-button"  id="b-10" onclick="open_description(10);">
+										<img src="./img/f2-arrow.png" alt="" class="arrow-up img-100" >
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-10">
+									<div class="f2-module-description hidden" id="desc-m10">
+										<hr/>
+										<p>
+											Как подать нулевой отчет Sales tax самостоятельно
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1 my-auto">
+
+						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
+							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
+						</div>
+
+						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
+							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
+						</div>
+					</div>
+				</div>
+
 				<div class = "row h-100 pc hidden" id="floor-3">
-					<div class="col-10"></div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-5 col-md-10 col-sm-10 f3-header">
+						<div class="header ">
+							Здесь могли бы быть отзывы наших студентов, но... 
+						</div>
+						<div class="f3-regular-text mt-5 mb-4">
+							Мы решили просто показать вам результаты продаж на нашем новом аккаунте продавца
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-10 col-sm-10 f3-feedback-img-div">
+						<div class="f3-feedback-img">
+							<img class="img-100" src="./img/feedback.gif" alt="Students' Feedback">
+						</div>
+						
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1"></div>
 					<div class="col-1 my-auto">
 
 						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
@@ -191,7 +703,7 @@
 						<img class = "f3-img img-100" src="./img/f4-man-open.png" alt="exhibitionist">
 						<div id="f4-rectangle" class="">
 							<div class="f4-text">
-								<b>Сори - это был этаж инфоган - </b>
+								<b>Сори - это был этаж инфоцыган - </b>
 								наш этаж немного выше!
 							</div>
 						</div>
@@ -218,7 +730,7 @@
 					<div class="col-1"></div>
 					<div class="col-3">
 						<img class="f5-photo" src="./img/p1.png" alt="Сергей Полян">
-						<div class="f5-rect mx-auto my-4 mb-6"> Сергей Полян </div>
+						<div class="f5-rect mx-auto my-4 mb-6"> Сергей Полынь </div>
 					</div>
 					<div class="col-3">
 						<img class="f5-photo" src="./img/p2.png" alt="Игорь Коротеев">
@@ -252,30 +764,6 @@
 						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
 							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
 						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-
-		<div class="row main-block hidden" id = "floor-5">
-			<div class="container">
-				<div class="row pc h-100">
-					<div class="col-1"></div>
-
-					
-
-					<div class="col-1 my-auto">
-
-						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">
-							<img src="./img/arrow.png" alt="" class="arrow-up img-100" >
-						</div>
-
-						<div class="navigation-button nav-down disabled" id = "nav-down" onclick="move_down()" >
-							<img src="./img/arrow.png" alt="" class="arrow-down img-100" >
-						</div>
-						
-
 					</div>
 				</div>
 			</div>
