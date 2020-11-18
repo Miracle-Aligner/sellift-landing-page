@@ -302,7 +302,7 @@ body {
     transform: scale(1, -1);
 }
 
-.navigation-button {
+.pc .navigation-button {
     margin-bottom: 10;
     height: 65px;
     width: 65px;
@@ -315,6 +315,42 @@ body {
     border-radius: 14px;
 }
 
+.mobile .navigation-button {
+    height: 65px;
+    width: 65px;
+    border-radius: 14px;
+
+    background: linear-gradient(279.34deg, #1D2935 -0.99%, #2F557B 99.89%);
+    box-shadow: 5px 5px 15px #1A1F24, -5px -5px 15px rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+}
+
+.mobile .nav-up {
+    float: left;
+    margin-right: 10;
+}
+
+.mobile .nav-down {
+    float: right;
+}
+
+
+.mobile-navigation {
+    position: fixed;    
+    left: 50%;
+    bottom: 10vh;
+}
+
+.mobile-nav-nested {
+    position: relative;
+    left: -50%;
+    background: #172737;
+    box-shadow: 6px 6px 8px #061320, -2px -1px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 14px;
+
+    height: 105px;
+    padding: 20;
+}
 
 .pc-row .start-button-div {
     position: absolute;
@@ -380,7 +416,7 @@ body {
     bottom: 15vh;
 }
 
-.navigation-button:hover {
+.pc .navigation-button:hover {
 
     cursor: pointer;
     height: 65px;

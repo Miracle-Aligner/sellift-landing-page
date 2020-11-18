@@ -101,6 +101,7 @@ window.move_down = function() {
 			$("#start-left-door").removeClass('hidden');
 			$("#start-right-door").removeClass('hidden');
 			$("#start-button-div").removeClass('hidden');
+			$("#start-button-div-mobile").removeClass('hidden');
 		}, 300);
 		return;
 	}
