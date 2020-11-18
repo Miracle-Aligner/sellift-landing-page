@@ -188,10 +188,11 @@ window.init_lift = function() {
 
 	setTimeout(function() {
 		changeFloorCounter();
-		var delayInMilliseconds = 400; //1 second
+		var delayInMilliseconds = 400; 
 		setTimeout(function() {
 			
 			$("#start-button-div").addClass('hidden');
+			$("#start-button-div-mobile").addClass('hidden');
 			$("#start-left-door").addClass('start-left-door-moved');
 			$("#start-right-door").addClass('start-right-door-moved');
 

@@ -27,10 +27,20 @@
 		</div>
 
 		
-		<div class="row start-button-div" id = "start-button-div">
-			<div class="start-button" id = "start-button" onclick="init_lift();">
-				<img src="./img/logo_full.png" alt="Sellift Logo" class="f0-logo-img" >
-			</div>	
+		<div class="pc-row d-none d-sm-none d-md-none d-lg-block d-xl-block">
+			<div class="start-button-div" id = "start-button-div">
+				<div class="start-button" id = "start-button" onclick="init_lift();">
+					<img src="./img/logo_full.png" alt="Sellift Logo" class="f0-logo-img" >
+				</div>	
+			</div>
+		</div>
+
+		<div class="mobile-row d-none d-sm-block d-md-block d-lg-none d-xl-none">
+			<div class="start-button-div" id = "start-button-div-mobile">
+				<div class="start-button" id = "start-button" onclick="init_lift();">
+					<img src="./img/logo_full.png" alt="Sellift Logo" class="f0-logo-img" >
+				</div>	
+			</div>
 		</div>
 		
 		<div class="door" id="start-left-door">
@@ -106,7 +116,7 @@
 				</div>
 			</div>
 
-			<div class="container mobile-row d-none d-sm-block d-md-block d-lg-none">
+			<div class="container mobile-row d-none d-sm-block d-md-block d-lg-none d-xl-none">
 				<div class="row ">
 					<div class="col-3"></div>
 					<div class="col-6 my-auto">
@@ -126,8 +136,8 @@
 			<div class="container">
 
 				<div class = "row h-100 pc hidden" id="floor-0">
-					<div class="col-1"></div>
-					<div class="col-6">
+					<div class="col-sm-1 col-md-1 col-lg-1"></div>
+					<div class="col-sm-10 col-md-10 col-lg-6">
 						<img class = "f0-header-img img-100" src="./img/logo_full.png" alt="Sellift Logo">
 						<div class="f0-header">
 							We sell the result
@@ -137,7 +147,7 @@
 
 						</div>
 					</div>
-					<div class="col-3"></div>
+					<div class="col-sm-10 col-md-3 col-lg-3"></div>
 					<div class="col-1 my-auto">
 
 						<div class="navigation-button nav-up" id = "nav-up" onclick="move_up();">

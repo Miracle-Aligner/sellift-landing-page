@@ -282,12 +282,6 @@ body {
     width:0vw!important;
 }
 
-.start-button-div {
-    position: absolute;
-    z-index: 10;
-    right: 15vw;
-}
-
 #start-right-door {
     z-index: 5;
     position: absolute;
@@ -321,6 +315,19 @@ body {
     border-radius: 14px;
 }
 
+
+.pc-row .start-button-div {
+    position: absolute;
+    z-index: 10;
+    right: 15vw;
+}
+
+.mobile-row .start-button-div {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+}
+
 .start-button {
     left: 0px;
     top: 0.515625px;
@@ -331,7 +338,12 @@ body {
     border-radius: 14px;
 }
 
-.start-button:hover {
+.mobile-row .start-button {
+    position: relative;
+    left: -50%;
+}
+
+.pc-row .start-button:hover {
 
     cursor: pointer;
     left: 0px;
@@ -343,13 +355,29 @@ body {
     border-radius: 14px;
 }
 
-.f0-logo-img {
+.mobile-row .start-button:hover {
+    cursor: pointer;
+    background: linear-gradient(276.5deg, #2E5276 0.08%, #1E2B38 98.91%);
+    box-shadow: inset 5px 5px 8px #1A1F24, inset -5px -5px 6px rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+}
+
+.pc-row .f0-logo-img {
     width: 200px;
     padding: 20px;
 }
 
-.start-button-div {
+.pc-row .start-button-div {
     top: calc((100vh - 160px) / 2 + 15vh);
+}
+
+.mobile-row .f0-logo-img {
+    width: 300px;
+    padding: 30px;
+}
+
+.mobile-row .start-button-div {
+    bottom: 15vh;
 }
 
 .navigation-button:hover {
