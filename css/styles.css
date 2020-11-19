@@ -327,7 +327,7 @@ body {
 
 .mobile .nav-up {
     float: left;
-    margin-right: 10;
+    margin-right: 10px;
 }
 
 .mobile .nav-down {
@@ -349,7 +349,7 @@ body {
     border-radius: 14px;
 
     height: 105px;
-    padding: 20;
+    padding: 20px;
 }
 
 .pc-row .start-button-div {
