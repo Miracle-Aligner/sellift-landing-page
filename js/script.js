@@ -103,6 +103,8 @@ window.move_down = function() {
 			$("#start-button-div").removeClass('hidden');
 			$("#start-button-div-mobile").removeClass('hidden');
 		}, 300);
+
+		changeFloorCounter();
 		return;
 	}
 	
