@@ -139,13 +139,16 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
 
+html, body {
+  overflow-x: hidden;
+}
 
 body {
+    position: relative
 	font-family: 'Formular';
 	font-size: 30px;
 	background-color: #061320;
 	color: white;
-    overflow-x: hidden;
     max-width: 100vw;
 }
 
@@ -228,6 +231,12 @@ body {
     margin-left: 10.5vw;;
     margin-right: 10.5vw;;
 	background-color: #1D2935;
+}
+
+.filler {
+    margin-left: 10.5vw;;
+    margin-right: 10.5vw;;
+    background-color: #1D2935;
 }
 
 .door {
@@ -325,6 +334,10 @@ body {
     border-radius: 14px;
 }
 
+.pc .nav-up {
+    margin-bottom: 10px;
+}
+
 .mobile .nav-up {
     float: left;
     margin-right: 10px;
@@ -338,7 +351,7 @@ body {
 .mobile-navigation {
     position: fixed;    
     left: 50%;
-    bottom: 10vh;
+    bottom: 6.5vh;
 }
 
 .mobile-nav-nested {

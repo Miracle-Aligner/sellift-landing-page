@@ -68,7 +68,7 @@ window.move_up = function() {
 				hide[i].classList.add("hidden");
 				show[i].classList.remove("hidden");
 			}
-			document.getElementById("exhibitionist").src="./img/f4-man-open.png";
+			
 		}, 1000);
 	}
 
@@ -105,6 +105,7 @@ window.move_down = function() {
 		}, 300);
 
 		changeFloorCounter();
+		hidePrevFloor();
 		return;
 	}
 	
@@ -194,6 +195,7 @@ window.init_lift = function() {
 		var delayInMilliseconds = 400; 
 		setTimeout(function() {
 			
+			adjustFiller();
 			$("#start-button-div").addClass('hidden');
 			$("#start-button-div-mobile").addClass('hidden');
 			$("#start-left-door").addClass('start-left-door-moved');
@@ -235,6 +237,7 @@ function closeDoors() {
 
 function openDoors() {
 
+	adjustFiller();
 	var delayInMilliseconds = 400; //1 second
 	setTimeout(function() {
 		$("#left-door").removeClass('left-door-moved');
@@ -261,4 +264,15 @@ function open_description(moduleNumber) {
 		moduleDesc.classList.add("hidden");
 		$("#b-" + moduleNumber).removeClass('f2-open-button-active');
 	}
+}
+
+function adjustFiller() {
+	var filler = document.getElementById("filler");
+	var mainBlock = document.getElementById("main-block");
+
+	var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
+
+	console.log("newHeight: " + newHeight);
+
+	filler.setAttribute("style",newHeight);
 }
