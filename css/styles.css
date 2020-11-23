@@ -144,7 +144,7 @@ html, body {
 }
 
 body {
-    position: relative
+    
 	font-family: 'Formular';
 	font-size: 30px;
 	background-color: #061320;
@@ -542,7 +542,7 @@ body {
 .f0-header {
     line-height: 74px;
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 5%;
 }
 
@@ -702,4 +702,98 @@ body {
 
 .f2-module-container {
     padding: 25px 0px;  
+}
+
+.f6-about {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.f6-offer-card {
+    background: #E2ECF4;
+    border-radius: 14px;
+    margin-top: 30px;
+}
+
+.f6-oc-1 {
+    box-shadow: 6px 6px 8px #061320, -4px -3px 9px rgba(255, 255, 255, 0.32);
+}
+
+.f6-oc-2 {
+    box-shadow: 6px 6px 8px #061320, -4px -3px 9px #73C0FD;
+}
+
+.f6-oc-3 {
+    box-shadow: 6px 6px 8px #061320, -4px -3px 9px #FED766;
+}
+
+.f6-about {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.f6-oc-green {
+    background: #197278;
+    border-radius: 0px 14px 14px 0px;
+    padding: 7%;
+}
+
+.f6-oc-white {
+    padding: 7%;
+}
+
+.f6-card-header-left {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    color: #1A1F24;
+}
+
+.f6-card-header-right {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    color: #E2ECF4;
+}
+
+.f6-desription  {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+.f6-desription-left {
+    color:  rgba(0, 0, 0, 1);
+}
+
+.f6-button {
+    background: linear-gradient(95.39deg, #56D771 3.03%, #38FF63 101.18%);
+    box-shadow: 4px 5px 8px rgba(26, 31, 36, 0.32), -3px -2px 9px rgba(255, 255, 255, 0.44);
+    border-radius: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 7%;
+    width: 90%;
+    text-align: center;
+}
+
+.f6-button:hover {
+    background: linear-gradient(275.57deg, #56D771 -1.69%, #38FF63 118.97%);
+    box-shadow: -5px -3px 9px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 0.18), inset 5px 5px 3px rgba(26, 31, 36, 0.24), inset -5px -5px 3px rgba(255, 255, 255, 0.32);
 }

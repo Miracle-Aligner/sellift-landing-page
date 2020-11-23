@@ -270,9 +270,18 @@ function adjustFiller() {
 	var filler = document.getElementById("filler");
 	var mainBlock = document.getElementById("main-block");
 
-	var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
+	
 
+	var winWidth = window.innerWidth;
+	if (winWidth < 992){
+		var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px + 225px)!important;";
+		filler.setAttribute("style",newHeight);
+	}
+	else{
+		var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
+		filler.setAttribute("style",newHeight);
+	}
 	console.log("newHeight: " + newHeight);
 
-	filler.setAttribute("style",newHeight);
+	
 }
