@@ -797,3 +797,62 @@ body {
     background: linear-gradient(275.57deg, #56D771 -1.69%, #38FF63 118.97%);
     box-shadow: -5px -3px 9px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 0.18), inset 5px 5px 3px rgba(26, 31, 36, 0.24), inset -5px -5px 3px rgba(255, 255, 255, 0.32);
 }
+
+@media only screen and (max-width: 992px) {
+    .f6-oc-green {
+        border-radius: 0px 0px 14px 14px!important;
+    }
+
+    .f6-oc-white, .f6-oc-green {
+        padding: 10%!important;
+    }
+
+    .header {
+        margin-top: 30px!important;
+        font-size: 24px;
+    }
+
+    .f6-about {
+        font-size: 16px;
+        line-height: inherit!important;
+    }
+
+    .f6-desription {
+        font-size: 16px!important;
+    }
+
+    .f7-slogan {
+        font-size: 30px;
+    }
+
+    .f0-header {
+        font-size: 36px;
+        line-height: 109.3%;
+        margin-bottom: 14%;
+    }
+
+    .f0-regular-text {
+        font-size: 24px;
+    }
+
+    .f1-text {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .f1-img-div {
+        margin-top: 30px;
+    }
+
+    .f3-regular-text {
+        font-size: 16px;
+        margin-top: 1rem!important;
+        margin-bottom: 0rem!important;
+    }
+
+    .f4-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
