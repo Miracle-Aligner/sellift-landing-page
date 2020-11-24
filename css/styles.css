@@ -242,7 +242,7 @@ body {
 .door {
 	width: 50vw;
 	/*Change for phone and tablet!*/
-	height: calc(100vh - 160px);
+	height: 100vh;
 	background: #26384A;
 }
 

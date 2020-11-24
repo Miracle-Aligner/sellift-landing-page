@@ -9,11 +9,10 @@ window.move_up = function() {
 	
 	$("html, body").animate({ scrollTop: 0 }, "fast");
 
-	closeDoors();
-
 	prevFloor = currentFloor;
 	currentFloor++;
-	
+
+	closeDoors();
 	
 	setTimeout(function() {
 		hidePrevFloor();
@@ -225,6 +224,13 @@ function showCurrFloor(){
 }
 
 function closeDoors() {
+	var doors = document.getElementsByClassName("door");
+	var i;
+	for (i = 0; i < doors.length; i++) {
+		var newHeight = "height: " +  document.getElementById("floor-" + prevFloor).scrollHeight + "px!important;";
+		doors[i].setAttribute("style",newHeight);;
+	}
+
 	$("#left-door").addClass('display-block');
 	$("#right-door").addClass('display-block');
 
