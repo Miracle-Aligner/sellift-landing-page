@@ -855,4 +855,44 @@ body {
         font-size: 24px;
         line-height: 30px;
     }
+
+    #f4-rectangle {
+        width: auto;
+        margin-top: -150px;
+    }
+
+    .f3-img {
+        margin-top: 30px;
+    }
+
+    .f0-regular-text {
+        margin-bottom: 0px;  
+    }
+    .f1-cta {
+        margin-bottom: 0px;
+    }
+
+    .f3-feedback-img-div {
+        margin-bottom: 0px;
+    }
+
+    .f5-rect {
+        margin-bottom: 0px!important;
+    }
+
+    .f5-photo {
+        margin-top: 20%;
+    }
+
+    .f3-header {
+        margin-top: 0%;
+    }
+
+    .f5-photo-01 {
+        margin-top: 0px;
+    }
+
+    .f3-feedback-img-div {
+        margin-top: 30px;
+    }
 }

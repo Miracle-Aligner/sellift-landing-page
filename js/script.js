@@ -92,7 +92,7 @@ window.move_down = function() {
 	prevFloor = currentFloor;
 	currentFloor--;
 
-	if (currentFloor == 0){
+	if (currentFloor == -1){
 		
 		$("#start-left-door").removeClass('start-left-door-moved');
 		$("#start-right-door").removeClass('start-right-door-moved');
@@ -273,15 +273,18 @@ function adjustFiller() {
 	
 
 	var winWidth = window.innerWidth;
-	if (winWidth < 992){
-		var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px + 225px)!important;";
-		filler.setAttribute("style",newHeight);
+	if (currentFloor != 7){
+		if (winWidth < 992){
+			var newHeight = "height: 200px!important;";
+			filler.setAttribute("style",newHeight);
+		}
+		else{
+			var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
+			/* filler.setAttribute("style",newHeight);*/
+		}
+		console.log("newHeight: " + newHeight);
 	}
-	else{
-		var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
-		filler.setAttribute("style",newHeight);
+	else {
+		filler.setAttribute("style","height: 0px;");
 	}
-	console.log("newHeight: " + newHeight);
-
-	
 }
