@@ -646,6 +646,21 @@ body {
     color: #2E5377;
 }
 
+.modal-content {
+    background: #1D2935;
+    box-shadow: 6px 6px 8px #061320, -4px -3px 9px rgba(255, 255, 255, 0.32);
+    border-radius: 14px;
+    height: fit-content;
+}
+
+.close {
+    color:white!important;
+}
+
+.freebirdFormviewerViewFormContentWrapper {
+    background: #1D2935!important;
+}
+
 .f2-module-header {
     font-family: Formular;
     font-style: normal;
@@ -794,6 +809,7 @@ body {
 }
 
 .f6-button:hover {
+    cursor: pointer;
     background: linear-gradient(275.57deg, #56D771 -1.69%, #38FF63 118.97%);
     box-shadow: -5px -3px 9px rgba(0, 0, 0, 0.2), 1px 1px 5px rgba(255, 255, 255, 0.18), inset 5px 5px 3px rgba(26, 31, 36, 0.24), inset -5px -5px 3px rgba(255, 255, 255, 0.32);
 }
@@ -895,4 +911,8 @@ body {
     .f3-feedback-img-div {
         margin-top: 30px;
     }
+}
+
+.modal-content {
+    margin: 0 auto;
 }

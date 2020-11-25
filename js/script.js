@@ -294,3 +294,64 @@ function adjustFiller() {
 		filler.setAttribute("style","height: 0px;");
 	}
 }
+
+window.onload = function() {
+    /* var o;
+    $(".form-btn").click(function() {
+        o = $(this).data("src")
+    }), console.log(o), $("#leadForm").attr("src", o), $(".google-form iframe").load(function() {
+        $(this).replaceWith("<h2>Thank You!</h2><p>Please check your email to receive the link to download the file.</p>")
+    }) */
+
+    // Get the modal
+	var modal = document.getElementsByClassName('modal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementsByClassName("f6-button");
+
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close");
+
+	// When the user clicks the button, open the modal 
+	btn[0].onclick = function() {
+	    modal[0].style.display = "block";
+	    
+	}
+
+	btn[1].onclick = function() {
+	    modal[1].style.display = "block";
+	    
+	}
+
+	btn[2].onclick = function() {
+	    modal[2].style.display = "block";
+	}
+
+
+	// When the user clicks on <span> (x), close the modal
+	span[0].onclick = function() {
+	    modal[0].style.display = "none";
+	}
+
+	span[1].onclick = function() {
+	    modal[1].style.display = "none";
+	}
+
+	span[2].onclick = function() {
+	    modal[2].style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+};
+
+function resizeIframe(iframe) {
+	var newHeight = iframe.ownerDocument.body.scrollHeight - iframe.ownerDocument.body.scrollHeight * 0.20;
+      iframe.height = newHeight +'px';
+  }
+
