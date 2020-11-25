@@ -352,7 +352,7 @@ window.onload = function() {
 
 function resizeIframe(iframe) {
 	
-    
+    var winWidth = window.innerWidth;
     if (winWidth < 992){
 		iframe.height = '500px';
 	}
