@@ -351,7 +351,14 @@ window.onload = function() {
 };
 
 function resizeIframe(iframe) {
-	var newHeight = iframe.ownerDocument.body.scrollHeight - iframe.ownerDocument.body.scrollHeight * 0.20;
-      iframe.height = newHeight +'px';
+	
+    
+    if (winWidth < 992){
+		iframe.height = '500px';
+	}
+	else{
+		var newHeight = iframe.ownerDocument.body.scrollHeight - iframe.ownerDocument.body.scrollHeight * 0.20;
+		iframe.height = newHeight +'px';
+	}
   }
 
