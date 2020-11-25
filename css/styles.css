@@ -462,7 +462,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none!important;
 }
 
 #floor-7{
@@ -919,4 +919,13 @@ body {
 
 iframe {
     overflow: scroll;
+}
+
+.start-button-div {
+
+    display: inline-block;
+
+    animation: tada; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+
 }
