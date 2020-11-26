@@ -359,7 +359,8 @@ function resizeIframe(iframe) {
 	
     var winWidth = window.innerWidth;
     if (winWidth < 992){
-    	var newHeight = iframe.ownerDocument.body.scrollHeight - 40;
+    	
+    	var newHeight = $(window).height();;
 		iframe.height = newHeight +'px';
 		return;
 		iframe.height = '500px';
