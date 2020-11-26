@@ -366,16 +366,7 @@ window.onload = function() {
 };
 
 function resizeIframe(iframe) {
-	
-    var winWidth = window.innerWidth;
-    if (winWidth < 992){
-
-    	var newHeight = $(window).height();
-		iframe.height = newHeight +'px';
-	}
-	else{
-		var newHeight = iframe.ownerDocument.body.scrollHeight;
-		iframe.height = newHeight +'px';
-	}
-  }
+	var newHeight = $(window).height();
+	iframe.height = newHeight +'px';
+}
 
