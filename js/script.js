@@ -316,36 +316,41 @@ window.onload = function() {
 	// When the user clicks the button, open the modal 
 	btn[0].onclick = function() {
 	    modal[0].style.display = "block";
-	    
+	    $("#body").addClass('modal-open');
 	}
 
 	btn[1].onclick = function() {
 	    modal[1].style.display = "block";
-	    
+	    $("#body").addClass('modal-open');
 	}
 
 	btn[2].onclick = function() {
 	    modal[2].style.display = "block";
+	    $("#body").addClass('modal-open');
 	}
 
 
 	// When the user clicks on <span> (x), close the modal
 	span[0].onclick = function() {
 	    modal[0].style.display = "none";
+	    $("#body").removeClass('modal-open');
 	}
 
 	span[1].onclick = function() {
 	    modal[1].style.display = "none";
+	    $("#body").removeClass('modal-open');
 	}
 
 	span[2].onclick = function() {
 	    modal[2].style.display = "none";
+	    $("#body").removeClass('modal-open');
 	}
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
 	    if (event.target == modal) {
 	        modal.style.display = "none";
+	    	$("#body").removeClass('modal-open');
 	    }
 	}
 };
