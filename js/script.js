@@ -359,10 +359,13 @@ function resizeIframe(iframe) {
 	
     var winWidth = window.innerWidth;
     if (winWidth < 992){
+    	var newHeight = iframe.ownerDocument.body.scrollHeight - 40;
+		iframe.height = newHeight +'px';
+		return;
 		iframe.height = '500px';
 	}
 	else{
-		var newHeight = iframe.ownerDocument.body.scrollHeight - iframe.ownerDocument.body.scrollHeight * 0.20;
+		var newHeight = iframe.ownerDocument.body.scrollHeight;
 		iframe.height = newHeight +'px';
 	}
   }
