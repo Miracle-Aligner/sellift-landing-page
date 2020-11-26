@@ -224,11 +224,15 @@ function showCurrFloor(){
 }
 
 function closeDoors() {
+
+	adjustFiller();
 	var doors = document.getElementsByClassName("door");
 	var i;
 	for (i = 0; i < doors.length; i++) {
-		var newHeight = "height: " +  document.getElementById("floor-" + prevFloor).scrollHeight + "px!important;";
-		doors[i].setAttribute("style",newHeight);;
+		var generalHeight = document.getElementById("floor-" + prevFloor).scrollHeight;
+		generalHeight += document.getElementById("filler").scrollHeight;
+		var newHeight = "height: " +  generalHeight + "px!important;";
+		doors[i].setAttribute("style",newHeight);
 	}
 
 	$("#left-door").addClass('display-block');
@@ -242,8 +246,6 @@ function closeDoors() {
 }
 
 function openDoors() {
-
-	adjustFiller();
 	var delayInMilliseconds = 400; //1 second
 	setTimeout(function() {
 		$("#left-door").removeClass('left-door-moved');
@@ -359,7 +361,7 @@ function resizeIframe(iframe) {
 	
     var winWidth = window.innerWidth;
     if (winWidth < 992){
-    	
+
     	var newHeight = $(window).height();;
 		iframe.height = newHeight +'px';
 		return;

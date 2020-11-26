@@ -919,6 +919,8 @@ body {
 
 iframe {
     overflow: scroll;
+    -webkit-overflow-scrolling: auto !important;
+    overflow-y: auto !important;
 }
 
 .start-button-div {
