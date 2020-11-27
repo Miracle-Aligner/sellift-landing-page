@@ -283,13 +283,16 @@ function adjustFiller() {
 
 	var winWidth = window.innerWidth;
 	if (currentFloor != 7){
+		var newHeightж
 		if (winWidth < 992){
-			var newHeight = "height: 200px!important;";
+			newHeight = "height: 200px!important;";
 			filler.setAttribute("style",newHeight);
 		}
 		else{
-			var newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
+			newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
 			/* filler.setAttribute("style",newHeight);*/
+			if (currentFloor == 2)
+				filler.setAttribute("style","height: 130px!important;");
 		}
 		console.log("newHeight: " + newHeight);
 	}
