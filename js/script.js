@@ -56,6 +56,7 @@ window.move_up = function() {
 	setTimeout(function() {
 		changeFloorCounter();
 		openDoors();
+		adjustFiller();
 	}, 400);
 
 	if (currentFloor == 4){
