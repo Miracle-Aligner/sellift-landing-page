@@ -291,7 +291,7 @@ function adjustFiller() {
 		else{
 			newHeight = "height: calc(100vh - 160px - " + mainBlock.scrollHeight + "px)!important;";
 			/* filler.setAttribute("style",newHeight);*/
-			if (currentFloor == 2)
+			if (currentFloor == 1)
 				filler.setAttribute("style","height: 130px!important;");
 		}
 		console.log("newHeight: " + newHeight);
