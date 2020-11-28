@@ -466,7 +466,7 @@ body {
 }
 
 #floor-7{
-     background: url("../img/roof_1.png");
+     background: url("../img/roof_1.webp");
      background-size: cover;
      height: calc(100vh - 160px);
 }
