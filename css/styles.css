@@ -531,6 +531,11 @@ body {
     border-radius: 14px;
 }
 
+.f3-feedback-img video {
+    border-radius: 14px;
+    width: 100%!important;
+}
+
 .mt-6 {
   margin-top: 5rem!important;
 }
