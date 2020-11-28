@@ -125,20 +125,6 @@
     font-style: normal;
 }
 
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
 html, body {
   overflow-x: hidden;
 }
@@ -928,6 +914,105 @@ iframe {
     overflow-y: auto !important;
 }
 
+
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+
+/*ANIMATION*/
+
+@charset "UTF-8";/*!
+ * animate.css - https://animate.style/
+ * Version - 4.1.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Animate.css
+ */
+:root {
+    --animate-duration:1s;--animate-delay:1s;--animate-repeat:1}
+
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.animate__animated.animate__infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+
+
+.animate__animated.animate__delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-delay: calc(var(--animate-delay)*2);
+    animation-delay: calc(var(--animate-delay)*2)
+}
+
+@media (prefers-reduced-motion:reduce),print {
+    .animate__animated {
+        -webkit-animation-duration: 1ms!important;
+        animation-duration: 1ms!important;
+        -webkit-transition-duration: 1ms!important;
+        transition-duration: 1ms!important;
+        -webkit-animation-iteration-count: 1!important;
+        animation-iteration-count: 1!important
+    }
+
+    .animate__animated[class*=Out] {
+        opacity: 0
+    }
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05,1.05,1.05);
+        transform: scale3d(1.05,1.05,1.05)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05,1.05,1.05);
+        transform: scale3d(1.05,1.05,1.05)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+.animate__pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+}
+
+
 .start-button-div {
 
     display: inline-block;
@@ -935,9 +1020,4 @@ iframe {
     animation: pulse; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; /* don't forget to set a duration! */
 
-}
-
-body.modal-open {
-    overflow: hidden;
-    position: fixed;
 }
