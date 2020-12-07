@@ -232,6 +232,8 @@ function adjustDoorsHeight (floor) {
 	for (i = 0; i < doors.length; i++) {
 		var generalHeight = document.getElementById("floor-" + floor).scrollHeight;
 		generalHeight += document.getElementById("filler").scrollHeight;
+		generalHeight += document.getElementById("lamps-block").scrollHeight;
+		
 		var newHeight = "height: " +  generalHeight + "px!important;";
 		doors[i].setAttribute("style",newHeight);
 	}
