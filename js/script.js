@@ -117,6 +117,7 @@ window.move_down = function() {
 	setTimeout(function() {
 		hidePrevFloor();
 		showCurrFloor();
+		adjustDoorsHeight(currentFloor);
 		if (currentFloor == 0){
 			/*$('#nav-down').addClass('disabled');*/
 			var down = document.getElementsByClassName("nav-down");
