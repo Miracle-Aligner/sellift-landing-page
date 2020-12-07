@@ -17,6 +17,7 @@ window.move_up = function() {
 	setTimeout(function() {
 		hidePrevFloor();
 		showCurrFloor();
+		adjustDoorsHeight(currentFloor);
 		if (currentFloor == 7){
 
 			var up = document.getElementsByClassName("nav-up");
@@ -224,17 +225,21 @@ function showCurrFloor(){
 	$("#floor-" + currentFloor).removeClass('hidden');
 }
 
-function closeDoors() {
-
-	adjustFiller();
+function adjustDoorsHeight (floor) {
 	var doors = document.getElementsByClassName("door");
 	var i;
 	for (i = 0; i < doors.length; i++) {
-		var generalHeight = document.getElementById("floor-" + prevFloor).scrollHeight;
+		var generalHeight = document.getElementById("floor-" + floor).scrollHeight;
 		generalHeight += document.getElementById("filler").scrollHeight;
 		var newHeight = "height: " +  generalHeight + "px!important;";
 		doors[i].setAttribute("style",newHeight);
 	}
+}
+
+function closeDoors() {
+
+	adjustFiller();
+	adjustDoorsHeight(prevFloor);
 
 	$("#left-door").addClass('display-block');
 	$("#right-door").addClass('display-block');
