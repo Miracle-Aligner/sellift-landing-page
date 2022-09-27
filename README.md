@@ -1,9 +1,7 @@
-# Project description
+# Sellift — Landing page
 
-<em><strong>Sellift</strong> is a company that provides tips in organizing e-commerce in the US.</em>
+Landing page for <strong>Sellift</strong>, a company that provides tips in organizing e-commerce in the US.
 
-This project presents website for sellift company.
+Live demo can be found [here](https://miracle-aligner.github.io/sellift-landing-page/).
 
-You can see web-page live [here](https://miracle-aligner.github.io/sellift-website/).
-
-![Preview image](https://github.com/Miracle-Aligner/sellift-website/blob/master/img/preview.webp "Preview image")
+![Preview image](https://github.com/Miracle-Aligner/sellift-landing-page/blob/master/img/preview_1.png "Preview image")
